@@ -1,0 +1,22 @@
+.female{
+    background:  #030304;;
+    height: 940px;
+    color:#fff;
+}
+
+.female-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.female-right p{
+    font-size: 40px;
+    font-style: italic;
+    line-height: 74px;
+    padding-right: 20px;
+}
+
+.female-right img{
+    width: 465px;
+}

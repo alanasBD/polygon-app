@@ -1,0 +1,11 @@
+.wallet{
+    height: 940px;
+    background: #030304;
+    color:#fff;
+}
+.wallet-left{
+    padding-left: 300px;
+}
+.wallet-right{
+    background-image: url("../../images/wallet-bg.png");
+}

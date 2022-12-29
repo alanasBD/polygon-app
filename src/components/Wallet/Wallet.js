@@ -1,25 +1,25 @@
 import "./Wallet.css";
-import wallet from "../../images/wallet.png"
+import wallet from "../../images/wallet.png";
+import arrow from "../../images/arrow.png";
 function Wallet(){
-    return <div className="container-fluid wallet  d-flex align-items-center">
-        <div>
-        <div className="row d-flex align-items-center">
-           <div className="col-md-6 d-flex align-items-center wallet-left">
-              <div>
-              <h1>Wallet</h1>
-               <p>Id blandit convallis ipsum commodo fermentum urna pellentesque. 
-                Consectetur fringilla sit sed morbi ultrices pellentesque eget elementum pharetra.</p>
-                <button type="button" class="btn btn-primary">Primary</button>
-              </div>
-           </div>
-           <div className="col-md-6 wallet-right">
-              <img src={wallet}/>
-             
-           </div>
-        </div>
+    return <div className="wallet">
+        <div className="row">
+          <div className="col-md-6 d-flex align-items-center">
+             <div>
+               <h1>Wallet</h1>
+               <p>Id blandit convallis ipsum commodo fermentum urna pellentesque.
+                 Consectetur fringilla sit sed morbi ultrices pellentesque eget elementum pharetra.</p>
+                 <div className="button">
+                       <a href="#">Learn More</a>
+                       <img src={arrow}/>
+                </div>
+             </div>
+          </div>
+          <div className="col-md-6 text-center">
+            <img src={wallet}/>
+          </div>
         </div>
     </div>
 }
-
 
 export default Wallet;

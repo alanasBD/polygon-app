@@ -1,22 +1,23 @@
-.female{
-    background:  #010101;
-    height: 940px;
-    color:#fff;
+.female {
+  background: #010101;
+  height: 940px;
+  color: #fff;
+  padding: 200px 300px;
 }
 
-.female-right{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.female-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.female-right p{
-    font-size: 40px;
-    font-style: italic;
-    line-height: 74px;
-    padding-right: 20px;
+.female-right p {
+  font-size: 40px;
+  font-style: italic;
+  line-height: 74px;
+  padding-right: 20px;
 }
 
-.female-right img{
-    width: 465px;
+.female-right img {
+  width: 465px;
 }

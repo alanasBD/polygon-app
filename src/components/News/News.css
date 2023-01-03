@@ -1,30 +1,55 @@
-.news{
-    background:#010101 ;
-    color:#fff;
-
+.news {
+  padding: 134px 300px 134px 0;
+  background: #020202;
 }
 
-.news h1{
-    font-family: 'GFS Didot';
-    font-weight: 700;
-    font-size: 56px;
+.card {
+  width: 424px;
+  height: 700px;
+  color: #fff;
+  background: #030303;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
 }
 
-.news a{
-    font-family: 'Proxima Nova';
+.read-more {
+  width: 158px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  padding: 6px 24px;
 }
 
-.news .button{
-    padding:12px 24px;
-    border: 1px solid #FFFFFF;
-    width: 169px;
-    margin-top:33px;
-    background: rgba(255, 255, 255, 0.05);
+.read-more a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 7px;
+  color: #fff;
 }
 
-.news .button a{
-    text-decoration: none;
-    color:#fff;
-    font-family: 'Proxima Nova';
-    margin-right: 18px; 
+.news-right {
+  /* display: flex;
+    align-items: center; */
+  color: #fff;
+  margin-top: 188px;
+  padding-left: 50px;
+}
+
+.news-right .button {
+  padding: 12px 24px;
+  border: 1px solid #ffffff;
+  width: 169px;
+  margin-top: 48px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.news-right .button a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Proxima Nova";
+  margin-right: 18px;
+}
+
+.arrows {
+  margin-top: 122px;
 }

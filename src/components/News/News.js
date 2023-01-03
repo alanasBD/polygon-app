@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "./News.css";
 import cardOne from "../../images/card1.png";
+import cardTwo from "../../images/cardTwo.png";
 import arrow from "../../images/arrow.png";
 import leftArrow from "../../images/left-arrow.png";
 import rightArrow from "../../images/right-arrow.png";
@@ -75,7 +76,7 @@ function News() {
               </div>
             </SwiperSlide>
             <SwiperSlide className="card">
-              <img src={cardOne} />
+              <img src={cardTwo} />
               <div className="card-body">
                 <h3>Title</h3>
                 <p>

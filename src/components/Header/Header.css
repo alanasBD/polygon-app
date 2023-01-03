@@ -6,6 +6,13 @@
   z-index: 100;
 }
 
+.header a,
+span {
+  font-family: "Proxima Nova";
+  font-weight: 600;
+  font-size: 16px;
+}
+
 .center-menu a {
   text-decoration: none;
   text-decoration: none;

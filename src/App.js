@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import BottomBar from "./components/BottomBar/BottomBar";
+import "./App.css";
 import Female from "./components/Female/Female";
 import Footer from "./components/Footer/Footer";
 import Wallet from "./components/Wallet/Wallet";
@@ -9,7 +9,8 @@ import Stock from "./components/Stock/Stock";
 import Hero from "./components/Hero/Hero";
 import Media from "./components/Media/Media";
 import News from "./components/News/News";
-import "./App.css";
+
+import FooterBottom from "./components/FooterBottom/FooterBottom";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
       <News />
       <Media />
       <Footer />
-      <BottomBar />
+      <FooterBottom />
     </div>
   );
 }

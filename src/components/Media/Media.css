@@ -25,19 +25,21 @@
 }
 
 .media h1 {
-  font-family: "GFS Didot";
+  font-family: "Didot";
   font-weight: 700;
+  font-size: 56px;
 }
 
 .media p {
   font-family: "Proxima Nova";
   font-size: 20px;
+  font-weight: 400;
 }
 
 .media .button {
   padding: 12px 24px;
   border: 1px solid #ffffff;
-  width: 169px;
+  width: 174px;
   margin-top: 48px;
   background: rgba(255, 255, 255, 0.05);
 }
@@ -47,6 +49,7 @@
   color: #fff;
   font-family: "Proxima Nova";
   margin-right: 18px;
+  font-weight: 400;
 }
 
 .swiper {

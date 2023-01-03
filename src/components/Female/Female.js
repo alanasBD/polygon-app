@@ -9,10 +9,10 @@ function Female() {
     >
       <div className="female-container">
         <div className="row">
-          <div className="col-md-6 text-center">
+          <div className="col-md-5 text-center">
             <img src={female} />
           </div>
-          <div className="col-md-6 female-right">
+          <div className="col-md-7 female-right">
             <p>
               “Id blandit convallis ipsum commodo fermentum urna pellentesque.
               Consectetur fringilla sit sed morbi ultrices pellentesque eget

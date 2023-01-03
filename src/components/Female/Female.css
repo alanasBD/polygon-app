@@ -12,10 +12,12 @@
 }
 
 .female-right p {
+  font-family: "Proxima Nova";
   font-size: 40px;
   font-style: italic;
   line-height: 74px;
   padding-right: 20px;
+  font-weight: 300;
 }
 
 .female-right img {

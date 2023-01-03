@@ -1,15 +1,19 @@
-.footer{
-    background: #0E0E0E;
-    color:#fff;
-    font-size: 16px;
-    height: 160px;
-    
+.footer {
+  background: #0e0e0e;
+  color: #fff;
+  font-size: 16px;
+  height: 160px;
+}
+.footer span {
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: 400;
 }
 
-.footer span{
-    margin-right:8px;
+.footer span {
+  margin-right: 8px;
 }
 
-.icons img{
-   margin:0 16px;
+.icons img {
+  margin: 0 16px;
 }

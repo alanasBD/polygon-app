@@ -11,15 +11,26 @@ import Media from "./components/Media/Media";
 import News from "./components/News/News";
 
 import FooterBottom from "./components/FooterBottom/FooterBottom";
+import { useState } from "react";
 
 function App() {
+  const [img, setImg] = useState(true);
+
+  const handleMove = (event) => {
+    if (event.pageY >= 2881 && event.pageY < 3840) {
+      setTimeout(() => {
+        setImg(false);
+      }, 1000);
+    }
+  };
+
   return (
-    <div className="App">
+    <div className="App" onMouseMove={handleMove}>
       <Header />
-      <Hero />
+      <Hero img={img} setImg={setImg} />
       <Stock />
       <Wallet />
-      <Female />
+      <Female img={img} />
       <News />
       <Media />
       <Footer />

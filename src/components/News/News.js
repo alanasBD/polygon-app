@@ -11,9 +11,15 @@ import "swiper/css/scrollbar";
 import "./News.css";
 import cardOne from "../../images/card1.png";
 import cardTwo from "../../images/cardTwo.png";
-import arrow from "../../images/arrow.png";
-import leftArrow from "../../images/left-arrow.png";
-import rightArrow from "../../images/right-arrow.png";
+import arrow from "../../images/arrow.svg";
+import leftArrow from "../../images/left-arrow.svg";
+import rightArrow from "../../images/right-arrow.svg";
+
+import partner from "../../images/partner.png";
+import office from "../../images/office.png";
+import person from "../../images/person.png";
+import people from "../../images/people.png";
+
 import { useState } from "react";
 function News() {
   const [prevEl, setPrevEl] = useState(null);
@@ -23,21 +29,24 @@ function News() {
     <div className="news container-fluid" id="news">
       <div className="row">
         {/* news left side */}
-        <div className="col-md-9 d-flex">
+        <div className="col-md-9 d-flex news-left">
           <Swiper
-            slidesPerView={2.5}
+            slidesPerView={3}
+            loop
             spaceBetween={30}
             modules={[Navigation]}
             navigation={{ prevEl, nextEl }}
+            className="my-swiper"
           >
+            {/* partner slider */}
             <SwiperSlide className="card">
-              <img src={cardOne} />
+              <img src={partner} />
               <div className="card-body">
-                <h3>Title</h3>
+                <h3>CSE's strategic Partner</h3>
                 <p>
-                  Aliquam massa scelerisque varius nulla vitae mattis ac nunc
-                  dignissim. Posuere consequat nibh varius auctor sit netus diam
-                  sodales in.
+                  The Bangladesh Securities and Exchange Commission (BSEC) has
+                  approved a proposal to appoint ABG Limited as a strategic
+                  partner of the Chittagong Stock Exchange (CSE)
                 </p>
                 <div className="read-more">
                   <a href="#">Read More</a>
@@ -45,14 +54,15 @@ function News() {
                 </div>
               </div>
             </SwiperSlide>
+            {/* office slider */}
             <SwiperSlide className="card">
-              <img src={cardOne} />
+              <img src={office} />
               <div className="card-body">
-                <h3>Title</h3>
+                <h3>ABG’s New Office</h3>
                 <p>
-                  Aliquam massa scelerisque varius nulla vitae mattis ac nunc
-                  dignissim. Posuere consequat nibh varius auctor sit netus diam
-                  sodales in.
+                  Recently, ABG Tower has moved to a new office location - ABG
+                  Tower located in the heart of Bashundhara R/A, a
+                  state-of-the-art corporate workspace.
                 </p>
                 <div className="read-more">
                   <a href="#">Read More</a>
@@ -60,14 +70,15 @@ function News() {
                 </div>
               </div>
             </SwiperSlide>
+            {/* person slider */}
             <SwiperSlide className="card">
-              <img src={cardOne} />
+              <img src={person} />
               <div className="card-body">
-                <h3>Title</h3>
+                <h3>Person of the Year</h3>
                 <p>
-                  Aliquam massa scelerisque varius nulla vitae mattis ac nunc
-                  dignissim. Posuere consequat nibh varius auctor sit netus diam
-                  sodales in.
+                  ABG Limited Managing Director Sayem Sobhan Anvir has been
+                  honoured as ‘Person of the Year’ at an international forum for
+                  his leadership excellence for industries.
                 </p>
                 <div className="read-more">
                   <a href="#">Read More</a>
@@ -75,29 +86,15 @@ function News() {
                 </div>
               </div>
             </SwiperSlide>
+            {/* people slider */}
             <SwiperSlide className="card">
-              <img src={cardTwo} />
+              <img src={people} />
               <div className="card-body">
-                <h3>Title</h3>
+                <h3>Stands By People</h3>
                 <p>
-                  Aliquam massa scelerisque varius nulla vitae mattis ac nunc
-                  dignissim. Posuere consequat nibh varius auctor sit netus diam
-                  sodales in.
-                </p>
-                <div className="read-more">
-                  <a href="#">Read More</a>
-                  <img src={arrow} />
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="card">
-              <img src={cardOne} />
-              <div className="card-body">
-                <h3>Title</h3>
-                <p>
-                  Aliquam massa scelerisque varius nulla vitae mattis ac nunc
-                  dignissim. Posuere consequat nibh varius auctor sit netus diam
-                  sodales in.
+                  Bashundhara Group from a humanitarian perspective has provided
+                  flood-affected people with emergency relief materials in
+                  Sylhet.
                 </p>
                 <div className="read-more">
                   <a href="#">Read More</a>
@@ -110,11 +107,10 @@ function News() {
         {/* news right side */}
         <div className="col-md-3  news-right">
           <div>
-            <h1>Top News</h1>
+            <h1>Notable News</h1>
             <p>
-              Id blandit convallis ipsum commodo fermentum urna pellentesque.
-              Consectetur fringilla sit sed morbi ultrices pellentesque eget
-              elementum pharetra.
+              Let's take a look at some of the recent highlights related to ABG
+              Limited's activities in the business universe.
             </p>
             <div className="button">
               <a href="#">View All</a>

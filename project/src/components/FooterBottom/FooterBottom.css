@@ -1,0 +1,18 @@
+.footer-bottom {
+  background: #030304;
+  color: #fff;
+  padding: 12px 48px;
+  height: 48px;
+}
+
+.footer-bottom-left p {
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.footer-bottom-right p {
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  font-size: 16px;
+}

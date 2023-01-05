@@ -1,12 +1,17 @@
 import { Link } from "react-router-dom";
 import "./Header.css";
-import subtract from "../../images/subtract.png";
-import union from "../../images/union.png";
+import subtract from "../../images/subtract.svg";
+import union from "../../images/union.svg";
+import logo from "../../images/logo.svg";
 function Header() {
   return (
     <div className="container-fluid header">
       <div className="row">
-        <div className="col-md-3"></div>
+        <div className="col-md-3 logo">
+          <a href="/">
+            <img src={logo} />
+          </a>
+        </div>
         <div className="col-md-6 center-menu d-flex justify-content-center align-items-center">
           <Link style={{ fontWeight: 600 }} to="#">
             Home

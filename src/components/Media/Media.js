@@ -13,21 +13,33 @@ import shapeTwo from "../../images/shape2.png";
 import shapeThree from "../../images/shape3.png";
 import shapeFour from "../../images/shape4.png";
 import shapeFive from "../../images/shape5.png";
-import arrow from "../../images/arrow.png";
-import leftArrow from "../../images/left-arrow.png";
-import rightArrow from "../../images/right-arrow.png";
+import arrow from "../../images/arrow.svg";
+import leftArrow from "../../images/left-arrow.svg";
+import rightArrow from "../../images/right-arrow.svg";
+import office from "../../images/office.png";
 import { useState } from "react";
+
+const imgStyle = {
+  display: "block",
+  width: "100%",
+  borderRadius: 4,
+};
 
 function Media() {
   const [prevEl, setPrevEl] = useState(null);
   const [nextEl, setNextEl] = useState(null);
+  const handleScroll = (event) => {
+    console.log(event);
+  };
   return (
-    <div className="media" id="media">
-      <h1 className="text-center">All Media</h1>
+    <div className="media" id="media" onScroll={handleScroll}>
+      <h1 className="text-center">Our Activities</h1>
       <p className="text-center">
-        Id blandit convallis ipsum commodo fermentum urna pellentesque.
-        Consectetur fringilla sit sed morbi ultrices pellentesque <br /> eget
-        elementum pharetra.
+        Take a look at our photo gallery to see behind-the-scenes shots of our
+        company in action. From team building events to product launches, these
+        photos showcase the hard work and dedication of our talented team. Get a
+        glimpse into the daily operations of our business and see what makes us
+        unique.
       </p>
 
       <div className="slider">
@@ -50,28 +62,19 @@ function Media() {
             modules={[EffectCoverflow, Navigation]}
           >
             <SwiperSlide>
-              <img style={{ display: "block", width: "100%" }} src={shapeOne} />
+              <img style={imgStyle} src={office} />
             </SwiperSlide>
             <SwiperSlide>
-              <img style={{ display: "block", width: "100%" }} src={shapeTwo} />
+              <img style={imgStyle} src={shapeTwo} />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                style={{ display: "block", width: "100%" }}
-                src={shapeThree}
-              />
+              <img style={imgStyle} src={shapeThree} />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                style={{ display: "block", width: "100%" }}
-                src={shapeFour}
-              />
+              <img style={imgStyle} src={shapeFour} />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                style={{ display: "block", width: "100%" }}
-                src={shapeFive}
-              />
+              <img style={imgStyle} src={shapeFive} />
             </SwiperSlide>
           </Swiper>
         </div>

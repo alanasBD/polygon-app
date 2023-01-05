@@ -1,7 +1,12 @@
 import "./Female.css";
-import female from "../../images/female.png";
-import an from "../../images/an.png";
-function Female() {
+import female from "../../lotties/portrait.json";
+import Lottie from "lottie-react";
+import signature from "../../images/signature.svg";
+import quoteImage from "../../images/quote-image.jpeg";
+const style = {
+  mixBlendMode: "difference",
+};
+function Female({ img }) {
   return (
     <div
       className="container-fluid  d-flex align-items-center justify-content-center female"
@@ -9,16 +14,24 @@ function Female() {
     >
       <div className="female-container">
         <div className="row">
-          <div className="col-md-5 text-center">
-            <img src={female} />
+          <div className="col-md-6 text-center  d-flex align-items-center">
+            {/* {img ? (
+              <img
+                width="640px"
+                height="360px"
+                src={quoteImage}
+                style={style}
+              />
+            ) : ( */}
+            <Lottie animationData={female} loop={img} style={style} />
           </div>
-          <div className="col-md-7 female-right">
+          <div className="col-md-6 female-right">
             <p>
-              “Id blandit convallis ipsum commodo fermentum urna pellentesque.
-              Consectetur fringilla sit sed morbi ultrices pellentesque eget
-              elementum pharetra.
+              “Our mission is to catalyse Bangladesh's economic activity by
+              enabling our citizen masses to participate in the financial
+              markets.
             </p>
-            <img src={an} />
+            <img src={signature} />
           </div>
         </div>
       </div>

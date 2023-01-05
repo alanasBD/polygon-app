@@ -1,13 +1,15 @@
 .wallet {
-  padding: 300px 200px;
-  background: #010101;
+  padding: 0px 200px;
+  background: radial-gradient(50% 50% at 50% 50%, #111110 0%, #000000 100%);
   color: #fff;
+  height: 960px;
 }
 
 .wallet h1 {
   font-family: "Didot";
   font-size: 56px;
   font-weight: 700;
+  line-height: 64px;
 }
 
 .wallet p {
@@ -20,9 +22,9 @@
 .wallet .button {
   padding: 12px 24px;
   border: 1px solid #ffffff;
-  width: 174px;
   margin-top: 48px;
   background: rgba(255, 255, 255, 0.05);
+  display: inline-block;
 }
 
 .wallet .button a {
@@ -30,4 +32,10 @@
   color: #fff;
   font-family: "Proxima Nova";
   margin-right: 18px;
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1900px) {
+  .wallet-row {
+    margin-top: -330px;
+  }
 }

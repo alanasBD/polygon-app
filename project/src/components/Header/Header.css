@@ -1,0 +1,42 @@
+.header {
+  background: #010101;
+  padding: 18px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header a,
+span {
+  font-family: "Proxima Nova";
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.center-menu a {
+  text-decoration: none;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 64px;
+  font-size: 16px;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.right-menu {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  gap: 32px;
+}
+.right-menu-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  column-gap: 8px;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}

@@ -1,0 +1,47 @@
+.hero {
+  padding: 0 200px 300px;
+  background: #010101;
+  color: #fff;
+  background-image: url("../../images/hero-bg.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 960px;
+  position: relative;
+  margin-top: 100px;
+}
+
+.hero h1 {
+  font-family: "Didot";
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.hero .button {
+  padding: 12px 24px;
+  border: 1px solid #ffffff;
+  width: 169px;
+  margin-top: 48px;
+  background: rgba(255, 255, 255, 0.05);
+}
+.hero .button img {
+  margin-right: 18px;
+}
+
+.hero .button a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  font-size: 14px;
+}
+.dots {
+  position: fixed;
+  top: 360px;
+  right: 45px;
+}
+
+.dots img {
+  display: block;
+  margin-bottom: 16px;
+  cursor: grab;
+}

@@ -1,5 +1,5 @@
 .media {
-  background: #010101;
+  background: radial-gradient(50% 50% at 50% 50%, #111110 0%, #000000 100%);
   color: #fff;
   height: 940px;
   padding: 134px 350px;
@@ -18,16 +18,25 @@
   top: 178px;
 }
 
+.left-arrow:hover {
+  cursor: grab;
+}
+
 .right-arrow {
   position: absolute;
   top: 178px;
   right: 0;
 }
 
+.right-arrow:hover {
+  cursor: grab;
+}
+
 .media h1 {
   font-family: "Didot";
   font-weight: 700;
   font-size: 56px;
+  line-height: 64px;
 }
 
 .media p {
@@ -39,7 +48,7 @@
 .media .button {
   padding: 12px 24px;
   border: 1px solid #ffffff;
-  width: 174px;
+  display: inline-block;
   margin-top: 48px;
   background: rgba(255, 255, 255, 0.05);
 }
@@ -69,3 +78,9 @@
     display: block;
     width: 100%;
   } */
+
+@media only screen and (min-width: 1400px) and (max-width: 1900px) {
+  .media {
+    padding: 134px 180px;
+  }
+}

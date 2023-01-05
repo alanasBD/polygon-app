@@ -1,0 +1,33 @@
+.wallet {
+  padding: 300px 200px;
+  background: #010101;
+  color: #fff;
+}
+
+.wallet h1 {
+  font-family: "Didot";
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.wallet p {
+  font-family: "Proxima Nova";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.wallet .button {
+  padding: 12px 24px;
+  border: 1px solid #ffffff;
+  width: 174px;
+  margin-top: 48px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.wallet .button a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Proxima Nova";
+  margin-right: 18px;
+}

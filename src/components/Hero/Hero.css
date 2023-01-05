@@ -1,28 +1,31 @@
 .hero {
-  padding: 0 200px 300px;
-  background: #010101;
+  /* padding: 0 200px 300px; */
+  padding: 0 200px;
+  background: radial-gradient(50% 50% at 50% 50%, #111110 0%, #000000 100%);
   color: #fff;
-  background-image: url("../../images/hero-bg.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
   height: 960px;
   position: relative;
-  margin-top: 100px;
+  /* margin-top: 100px; */
+}
+.hero-right {
+  margin-left: -84px;
 }
 
 .hero h1 {
   font-family: "Didot";
-  font-size: 72px;
+  font-size: 54px;
   font-weight: 700;
+  line-height: 64px;
 }
 
 .hero .button {
   padding: 12px 24px;
   border: 1px solid #ffffff;
-  width: 169px;
+  display: inline-block;
   margin-top: 48px;
   background: rgba(255, 255, 255, 0.05);
 }
+
 .hero .button img {
   margin-right: 18px;
 }
@@ -34,14 +37,148 @@
   font-weight: 400;
   font-size: 14px;
 }
+
 .dots {
   position: fixed;
   top: 360px;
   right: 45px;
 }
 
+.dots:hover {
+  cursor: grab;
+}
+
+.dots a:hover {
+}
+
 .dots img {
   display: block;
   margin-bottom: 16px;
-  cursor: grab;
+  /* cursor: grab; */
+}
+
+.dot-btn {
+}
+.section-one::before {
+  content: "ABG Limited";
+  position: absolute;
+  top: -15px;
+  left: -120px;
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 16px;
+  border-radius: 5px;
+  display: none;
+}
+
+.section-one:hover::before {
+  display: block;
+}
+
+.section-two::before {
+  content: "Stock Exchange";
+  position: absolute;
+  left: -140px;
+  top: 12px;
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 16px;
+  border-radius: 5px;
+  display: none;
+}
+
+.section-two:hover::before {
+  display: block;
+}
+
+.section-three::before {
+  content: "ABG Wallet";
+  position: absolute;
+  left: -110px;
+  top: 40px;
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 16px;
+  border-radius: 5px;
+  display: none;
+}
+
+.section-three:hover::before {
+  display: block;
+}
+
+.section-four::before {
+  content: "Our Mission";
+  position: absolute;
+  left: -120px;
+  top: 68px;
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 16px;
+  border-radius: 5px;
+  display: none;
+}
+
+.section-four:hover::before {
+  display: block;
+}
+
+.section-five::before {
+  content: "Notable News";
+  position: absolute;
+  left: -130px;
+  top: 98px;
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 16px;
+  border-radius: 5px;
+  display: none;
+}
+
+.section-five:hover::before {
+  display: block;
+}
+
+.section-six::before {
+  content: "Our Activities";
+  position: absolute;
+  left: -130px;
+  top: 124px;
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 16px;
+  border-radius: 5px;
+  display: none;
+}
+
+.section-six:hover::before {
+  display: block;
+}
+
+.active img {
+  background: #ffffff;
+  border-radius: 50% 50%;
+}
+
+.active-link {
+  background: #ffffff;
+  border-radius: 50% 50%;
 }

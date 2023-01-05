@@ -1,17 +1,25 @@
 import "./Stock.css";
-import stock from "../../images/stock.png";
-import arrow from "../../images/arrow.png";
+import Lottie from "lottie-react";
+import stock from "../../lotties/stock-exchange.json";
+import arrow from "../../images/arrow.svg";
+const style = {
+  mixBlendMode: "difference",
+};
 function Stock() {
   return (
-    <div className="container-fluid stock" id="stock">
-      <div className="row">
+    <div
+      className="container-fluid stock  d-flex align-items-center"
+      id="stock"
+    >
+      <div className="row stock-row">
         <div className="col-md-6 d-flex align-items-center">
           <div className="stock-left">
-            <h1>Stock Management</h1>
+            <h1>Stock Exchange</h1>
             <p>
-              Id blandit convallis ipsum commodo fermentum urna pellentesque.
-              Consectetur fringilla sit sed morbi ultrices pellentesque eget
-              elementum pharetra.
+              The Chittagong Stock Exchange (CSE) is one of the two stock
+              exchanges in Bangladesh, located in the port city of Chittagong.
+              Established in 1995, the CSE is an important financial hub in the
+              region and plays a crucial role in the country's economy.
             </p>
             <div className="button">
               <a href="#">Learn More</a>
@@ -20,7 +28,7 @@ function Stock() {
           </div>
         </div>
         <div className="col-md-6 text-center">
-          <img src={stock} />
+          <Lottie animationData={stock} style={style} />
         </div>
       </div>
     </div>

@@ -1,0 +1,71 @@
+.media {
+  background: #010101;
+  color: #fff;
+  height: 940px;
+  padding: 134px 350px;
+}
+
+.slider {
+  position: relative;
+}
+.slider-inner-section {
+  width: 860px;
+  margin: 0 auto;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 178px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 178px;
+  right: 0;
+}
+
+.media h1 {
+  font-family: "Didot";
+  font-weight: 700;
+  font-size: 56px;
+}
+
+.media p {
+  font-family: "Proxima Nova";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.media .button {
+  padding: 12px 24px;
+  border: 1px solid #ffffff;
+  width: 174px;
+  margin-top: 48px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.media .button a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Proxima Nova";
+  margin-right: 18px;
+  font-weight: 400;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+/* .swiper-slide img {
+    display: block;
+    width: 100%;
+  } */

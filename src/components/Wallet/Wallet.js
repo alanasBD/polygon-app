@@ -1,17 +1,25 @@
 import "./Wallet.css";
-import wallet from "../../images/wallet.png";
-import arrow from "../../images/arrow.png";
+import Lottie from "lottie-react";
+import wallet from "../../lotties/wallet.json";
+import arrow from "../../images/arrow.svg";
+const style = {
+  mixBlendMode: "difference",
+};
+
 function Wallet() {
   return (
-    <div className="wallet container-fluid" id="wallet">
-      <div className="row">
+    <div
+      className="wallet container-fluid d-flex align-items-center"
+      id="wallet"
+    >
+      <div className="row wallet-row">
         <div className="col-md-6 d-flex align-items-center">
           <div>
-            <h1>Wallet</h1>
+            <h1>ABG Wallet</h1>
             <p>
-              Id blandit convallis ipsum commodo fermentum urna pellentesque.
-              Consectetur fringilla sit sed morbi ultrices pellentesque eget
-              elementum pharetra.
+              Leave your wallet at home & Go digital with ABG's e-wallet.
+              Experience the future of payments. Join the millions of users who
+              have made the switch and never looked back.
             </p>
             <div className="button">
               <a href="#">Learn More</a>
@@ -20,7 +28,7 @@ function Wallet() {
           </div>
         </div>
         <div className="col-md-6 text-center">
-          <img src={wallet} />
+          <Lottie animationData={wallet} style={style} />
         </div>
       </div>
     </div>

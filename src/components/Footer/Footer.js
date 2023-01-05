@@ -1,7 +1,7 @@
 import "./Footer.css";
-import fb from "../../images/facebook.png";
-import twitter from "../../images/twitter.png";
-import youtube from "../../images/youtube.png";
+import fb from "../../images/facebook.svg";
+import twitter from "../../images/twitter.svg";
+import youtube from "../../images/youtube.svg";
 function Footer() {
   return (
     <div className="">

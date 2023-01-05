@@ -1,15 +1,21 @@
 .news {
   padding: 134px 300px 134px 0;
-  background: #020202;
+  background: radial-gradient(50% 50% at 50% 50%, #111110 0%, #000000 100%);
 }
 
 .card {
-  width: 424px;
-  height: 700px;
+  /* width: 424px;
+  height: 700px; */
   color: #fff;
-  background: #030303;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: transparent;
+  /* border: 1px solid rgba(255, 255, 255, 0.25) !important; */
+
   border-radius: 4px;
+}
+
+.card-body {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 32px;
 }
 
 .card h3 {
@@ -54,6 +60,7 @@
   font-family: "Didot";
   font-weight: 700;
   font-size: 56px;
+  line-height: 64px;
 }
 
 .news-right p {
@@ -65,8 +72,9 @@
 .news-right .button {
   padding: 12px 24px;
   border: 1px solid #ffffff;
-  width: 169px;
+
   margin-top: 48px;
+  display: inline-block;
   background: rgba(255, 255, 255, 0.05);
 }
 
@@ -80,4 +88,16 @@
 
 .arrows {
   margin-top: 122px;
+}
+
+.arrows:hover {
+  cursor: grab;
+}
+
+.my-swiper {
+  margin-left: -48px;
+}
+
+.swiper-slide {
+  height: auto;
 }
